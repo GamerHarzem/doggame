@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#14204a">
+<title>Dog Brawlers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <symbol id="dog" viewBox="0 0 200 260">
+      <ellipse cx="100" cy="250" rx="62" ry="8" fill="#000" opacity=".3"/>
+      <rect x="62" y="190" width="30" height="56" rx="12" fill="#e08a2c" stroke="#5a2e0c" stroke-width="5"/>
+      <rect x="108" y="190" width="30" height="56" rx="12" fill="#e08a2c" stroke="#5a2e0c" stroke-width="5"/>
+      <path d="M150 215c30 0 36-40 22-62" fill="none" stroke="#5a2e0c" stroke-width="22" stroke-linecap="round"/>
+      <path d="M150 215c30 0 36-40 22-62" fill="none" stroke="#f0a24a" stroke-width="13" stroke-linecap="round"/>
+      <path d="M56 120c-8 40-8 80 6 100h76c14-20 14-60 6-100z" fill="#f0a24a" stroke="#5a2e0c" stroke-width="5"/>
+      <path d="M78 160c0 26 6 48 22 54 16-6 22-28 22-54z" fill="#fff3de"/>
+      <path d="M52 112l48 70 48-70c-14-14-34-20-48-20s-34 6-48 20z" fill="#2f7ff0" stroke="#17408a" stroke-width="5"/>
+      <path d="M40 58L30 8l44 28zM160 58l10-50-44 28z" fill="#e08a2c" stroke="#5a2e0c" stroke-width="5" stroke-linejoin="round"/>
+      <path d="M46 52l-4-30 26 18zM154 52l4-30-26 18z" fill="#fff3de"/>
+      <ellipse cx="100" cy="72" rx="68" ry="58" fill="#f0a24a" stroke="#5a2e0c" stroke-width="5"/>
+      <path d="M52 84c10 30 30 42 48 42s38-12 48-42c-12 10-28 14-48 14s-36-4-48-14z" fill="#fff3de"/>
+      <path d="M62 56l30 10M138 56l-30 10" stroke="#2a1405" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="76" cy="70" r="8" fill="#2a1405"/><circle cx="124" cy="70" r="8" fill="#2a1405"/>
+      <circle cx="79" cy="67" r="2.5" fill="#fff"/><circle cx="127" cy="67" r="2.5" fill="#fff"/>
+      <path d="M90 90h20l-10 12z" fill="#2a1405"/>
+      <path d="M86 110q14 8 28 0" fill="none" stroke="#2a1405" stroke-width="4" stroke-linecap="round"/>
+      <path d="M92 108l4 9 4-9z" fill="#fff"/>
+      <g class="hammer">
+        <rect x="150" y="62" width="14" height="96" rx="6" fill="#8a5424" stroke="#4a2808" stroke-width="4" transform="rotate(14 157 110)"/>
+        <g transform="rotate(14 157 110)"><rect x="134" y="26" width="48" height="26" rx="10" fill="#fff3de" stroke="#5a2e0c" stroke-width="4"/>
+        <circle cx="136" cy="30" r="12" fill="#fff3de" stroke="#5a2e0c" stroke-width="4"/><circle cx="136" cy="50" r="12" fill="#fff3de" stroke="#5a2e0c" stroke-width="4"/>
+        <circle cx="180" cy="30" r="12" fill="#fff3de" stroke="#5a2e0c" stroke-width="4"/><circle cx="180" cy="50" r="12" fill="#fff3de" stroke="#5a2e0c" stroke-width="4"/>
+        <rect x="136" y="28" width="44" height="22" fill="#fff3de"/></g>
+        <circle cx="156" cy="140" r="14" fill="#f0a24a" stroke="#5a2e0c" stroke-width="4"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<main id="lobby" class="screen">
+  <div class="scene" aria-hidden="true">
+    <div class="tree t1"></div><div class="tree t2"></div>
+    <div class="bench b1"></div><div class="bench b2"></div>
+    <div class="hydrant h1"></div><div class="hydrant h2"></div>
+    <div class="grass"></div>
+  </div>
+
+  <header class="top">
+    <div class="profile">
+      <svg class="avatar"><use href="#dog"/></svg>
+      <div class="lvl">15</div>
+      <div class="pname"><span>🏆</span> BarkMaster99</div>
+    </div>
+    <div class="currency"><span class="coin"></span><b id="coins">1,450</b><span class="gem"></span><b>120</b></div>
+    <nav class="sys">
+      <button class="sq" aria-label="Settings">⚙</button>
+      <button class="sq" aria-label="Mail">✉</button>
+      <button class="sq" aria-label="Menu">☰</button>
+    </nav>
+  </header>
+
+  <aside class="side left">
+    <button class="sb"><i>🃏</i>BRAWLERS<em class="tag">Active</em></button>
+    <button class="sb"><i>🏪</i>SHOP<em class="badge">2</em></button>
+    <button class="sb"><i class="coin big"></i></button>
+  </aside>
+  <aside class="side right">
+    <button class="sb"><i>😀</i>FRIENDS</button>
+    <button class="sb"><i>🛡</i>FRIENDS</button>
+  </aside>
+
+  <section class="stage">
+    <h1>DOG BRAWLERS</h1>
+    <svg class="hero"><use href="#dog"/></svg>
+    <div class="row">
+      <button class="pick"><svg><use href="#dog"/></svg><span>SELECT<br>BRAWLER</span></button>
+      <button class="equip">EQUIP<small>GADGET/STAR POWER</small></button>
+    </div>
+  </section>
+
+  <footer class="bottom">
+    <button class="tab"><i>🃏</i>BRAWLERS</button>
+    <button class="tab"><em class="tag">Active</em></button>
+    <button class="tab"><i>📋</i>EVENTS</button>
+    <button class="tab shop"><small>Event Timer: 1h 30m</small><i>🏪</i><em class="new">NEW</em><small>New Offers Available!</small></button>
+    <button class="tab"><i>🛡</i>CLANS</button>
+    <div class="mode"><span class="gemicon"></span><div><small>GEM GRAB:</small><b>BONE YARD</b></div><button class="chg">Change Mode</button><i class="info">i</i></div>
+    <button id="play" class="play"><span class="bone">🦴</span>PLAY</button>
+  </footer>
+</main>
+
+<main id="game" class="screen hidden">
+  <canvas id="cv"></canvas>
+  <div class="hud"><div id="score">0 : 0</div><div id="timer">2:00</div></div>
+  <div id="joy"><div id="knob"></div></div>
+  <button id="btnAtk" class="abtn atk">🦴</button>
+  <button id="btnSkill" class="abtn skl">⚡</button>
+  <div id="end" class="hidden"><h2 id="endTitle"></h2><button id="back" class="play">LOBBY</button></div>
+</main>
+<script src="game.js"></script>
+</body>
+</html>
